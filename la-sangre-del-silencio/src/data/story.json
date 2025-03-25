@@ -1,0 +1,245 @@
+{
+  "title": "La Sangre del Silencio",
+  "scenes": [
+    {
+      "id": "introduction",
+      "description": "En una Boyacá fracturada por la guerra política, un joven campesino se encuentra en una encrucijada entre las ideas de su familia conservadora y la revolución liberal de sus amigos.",
+      "choices": [
+        {
+          "text": "Hablar con la familia sobre sus creencias.",
+          "nextScene": "family_discussion",
+          "type": "neutral",
+          "value": 0
+        },
+        {
+          "text": "Unirse a sus amigos en una reunión liberal.",
+          "nextScene": "liberal_meeting",
+          "type": "neutral",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "family_discussion",
+      "description": "Tu familia expresa su preocupación por la influencia de los liberales. Te sientes atrapado entre dos mundos.",
+      "choices": [
+        {
+          "text": "Defender las ideas liberales.",
+          "nextScene": "defend_liberal_ideas",
+          "type": "consciousness",
+          "value": 1
+        },
+        {
+          "text": "Mantener la paz y no discutir.",
+          "nextScene": "peacekeeping",
+          "type": "neutral",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "liberal_meeting",
+      "description": "Te unes a tus amigos en una reunión donde discuten sobre la necesidad de un cambio. La emoción es palpable.",
+      "choices": [
+        {
+          "text": "Proponer una asamblea en la plaza.",
+          "nextScene": "town_square_assembly",
+          "type": "consciousness",
+          "value": 2
+        },
+        {
+          "text": "Escuchar las preocupaciones de los demás.",
+          "nextScene": "listening",
+          "type": "consciousness",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "defend_liberal_ideas",
+      "description": "Tu defensa de las ideas liberales provoca una fuerte reacción de tu familia. La tensión aumenta.",
+      "choices": [
+        {
+          "text": "Salir de casa para unirte a la revolución.",
+          "nextScene": "join_revolution",
+          "type": "hate",
+          "value": 2
+        },
+        {
+          "text": "Tratar de reconciliar las diferencias.",
+          "nextScene": "reconciliation",
+          "type": "consciousness",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "peacekeeping",
+      "description": "Decides no discutir y mantener la paz, pero sientes que te alejas de tus amigos.",
+      "choices": [
+        {
+          "text": "Buscar a tus amigos para hablar.",
+          "nextScene": "search_friends",
+          "type": "consciousness",
+          "value": 1
+        },
+        {
+          "text": "Leer un libro sobre la historia del país.",
+          "nextScene": "reading_book",
+          "type": "consciousness",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "town_square_assembly",
+      "description": "Convocas a una asamblea en la plaza del pueblo. La gente comienza a llegar, pero hay tensión en el aire.",
+      "choices": [
+        {
+          "text": "Hablar sobre la importancia de la unidad.",
+          "nextScene": "unity_speech",
+          "type": "consciousness",
+          "value": 3
+        },
+        {
+          "text": "Escuchar las preocupaciones de la comunidad.",
+          "nextScene": "community_concerns",
+          "type": "consciousness",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "description": "Escuchas las preocupaciones de tus amigos y vecinos. La división es evidente.",
+      "choices": [
+        {
+          "text": "Proponer un plan de acción.",
+          "nextScene": "action_plan",
+          "type": "consciousness",
+          "value": 2
+        },
+        {
+          "text": "Decidir actuar solo.",
+          "nextScene": "solo_action",
+          "type": "hate",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "join_revolution",
+      "description": "Te unes a la revolución, pero la violencia estalla rápidamente. La sangre se derrama.",
+      "endings": [
+        {
+          "type": "violent",
+          "description": "Mueren todos, tú incluido. La escena final es ver a los políticos brindando juntos."
+        }
+      ]
+    },
+    {
+      "id": "reconciliation",
+      "description": "Intentas reconciliar las diferencias, pero la división persiste. Te sientes impotente.",
+      "endings": [
+        {
+          "type": "partial_consciousness",
+          "description": "Sobrevives, pero solo. Tu esfuerzo fue insuficiente, el pueblo sigue dividido."
+        }
+      ]
+    },
+    {
+      "id": "search_friends",
+      "description": "Buscas a tus amigos para hablar sobre el futuro. La esperanza comienza a florecer.",
+      "choices": [
+        {
+          "text": "Convocar a una nueva asamblea.",
+          "nextScene": "town_square_assembly",
+          "type": "consciousness",
+          "value": 2
+        },
+        {
+          "text": "Leer sobre estrategias de organización.",
+          "nextScene": "reading_book",
+          "type": "consciousness",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "reading_book",
+      "description": "Mientras lees, te das cuenta de que el verdadero cambio no se logra con violencia, sino con organización.",
+      "choices": [
+        {
+          "text": "Decidir actuar colectivamente.",
+          "nextScene": "collective_action",
+          "type": "consciousness",
+          "value": 3
+        },
+        {
+          "text": "Ignorar el libro y seguir con la violencia.",
+          "nextScene": "join_revolution",
+          "type": "hate",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "unity_speech",
+      "description": "Tu discurso sobre la unidad resuena en la multitud. La esperanza comienza a crecer.",
+      "endings": [
+        {
+          "type": "hopeful",
+          "description": "El pueblo se une. Logras evitar una masacre convocando a una última asamblea."
+        }
+      ]
+    },
+    {
+      "id": "community_concerns",
+      "description": "Escuchar las preocupaciones de la comunidad te da nuevas ideas sobre cómo avanzar.",
+      "choices": [
+        {
+          "text": "Proponer un plan de acción.",
+          "nextScene": "action_plan",
+          "type": "consciousness",
+          "value": 2
+        },
+        {
+          "text": "Decidir actuar solo.",
+          "nextScene": "solo_action",
+          "type": "hate",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "action_plan",
+      "description": "Propones un plan de acción que une a la comunidad. La esperanza renace.",
+      "endings": [
+        {
+          "type": "hopeful",
+          "description": "El pueblo se une. Logras evitar una masacre convocando a una última asamblea."
+        }
+      ]
+    },
+    {
+      "id": "solo_action",
+      "description": "Decides actuar solo, pero la falta de apoyo te lleva a la derrota.",
+      "endings": [
+        {
+          "type": "violent",
+          "description": "Mueren todos, tú incluido. La escena final es ver a los políticos brindando juntos."
+        }
+      ]
+    },
+    {
+      "id": "collective_action",
+      "description": "Decides actuar colectivamente. La comunidad se une y comienza a organizarse.",
+      "endings": [
+        {
+          "type": "hopeful",
+          "description": "El pueblo se une. Logras evitar una masacre convocando a una última asamblea."
+        }
+      ]
+    }
+  ]
+}

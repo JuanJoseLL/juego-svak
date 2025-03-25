@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sangre del Silencio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/dialog.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>La Sangre del Silencio</h1>
+        <div id="scene-container"></div>
+        <div id="dialog-container"></div>
+        <div id="game-ui">
+            <!-- UI elements will be dynamically generated here -->
+        </div>
+    </div>
+    
+    <!-- Audio preload (hidden) -->
+    <div id="audio-preload" style="display:none;"></div>
+    
+    <!-- Load JavaScript files in the correct order -->
+    <script src="src/js/game-state.js"></script>
+    <script src="src/js/dialog.js"></script>
+    <script src="src/js/characters.js"></script>
+    <script src="src/js/scenes.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.dialog-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.dialog-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: #fff;
+}
+
+.dialog-options {
+    margin-top: 10px;
+}
+
+.dialog-option {
+    display: block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: background 0.3s;
+}
+
+.dialog-option:hover {
+    background: #45a049;
+}

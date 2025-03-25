@@ -1,0 +1,162 @@
+{
+  "dialogs": [
+    {
+      "id": "intro",
+      "character": "Narrador",
+      "lines": [
+        "En una Boyacá fracturada por la guerra política, un joven campesino se encuentra atrapado entre las ideas de su familia conservadora y la revolución liberal de sus amigos.",
+        "¿Qué camino elegirás?"
+      ],
+      "choices": [
+        {
+          "text": "Hablar con la familia",
+          "nextDialog": "familia"
+        },
+        {
+          "text": "Unirse a los amigos liberales",
+          "nextDialog": "amigos"
+        }
+      ]
+    },
+    {
+      "id": "familia",
+      "character": "Madre",
+      "lines": [
+        "Hijo, debes mantenerte fiel a nuestras tradiciones. La violencia solo traerá más dolor."
+      ],
+      "choices": [
+        {
+          "text": "Escuchar a mi madre",
+          "nextDialog": "escucharMadre"
+        },
+        {
+          "text": "Rebelarme y unirme a la revolución",
+          "nextDialog": "rebelarse"
+        }
+      ]
+    },
+    {
+      "id": "amigos",
+      "character": "Amigo",
+      "lines": [
+        "¡Es hora de luchar por nuestros derechos! No podemos quedarnos de brazos cruzados."
+      ],
+      "choices": [
+        {
+          "text": "Unirme a la lucha",
+          "nextDialog": "lucha"
+        },
+        {
+          "text": "Buscar una solución pacífica",
+          "nextDialog": "solucionPaz"
+        }
+      ]
+    },
+    {
+      "id": "escucharMadre",
+      "character": "Narrador",
+      "lines": [
+        "Decidiste escuchar a tu madre, pero el conflicto sigue creciendo a tu alrededor."
+      ],
+      "choices": [
+        {
+          "text": "Buscar un libro sobre la historia del pueblo",
+          "nextDialog": "libro"
+        }
+      ]
+    },
+    {
+      "id": "rebelarse",
+      "character": "Narrador",
+      "lines": [
+        "Te rebelaste y te uniste a la revolución. La violencia se desata."
+      ],
+      "choices": [
+        {
+          "text": "Luchar",
+          "nextDialog": "finalViolento"
+        }
+      ]
+    },
+    {
+      "id": "lucha",
+      "character": "Narrador",
+      "lines": [
+        "Te uniste a la lucha, pero la violencia solo trajo más dolor y división."
+      ],
+      "choices": [
+        {
+          "text": "Reflexionar sobre mis acciones",
+          "nextDialog": "reflexion"
+        }
+      ]
+    },
+    {
+      "id": "solucionPaz",
+      "character": "Narrador",
+      "lines": [
+        "Buscaste una solución pacífica, pero el tiempo se agota."
+      ],
+      "choices": [
+        {
+          "text": "Convocar a una asamblea",
+          "nextDialog": "asamblea"
+        }
+      ]
+    },
+    {
+      "id": "libro",
+      "character": "Narrador",
+      "lines": [
+        "El libro te abre los ojos a nuevas ideas. La conciencia es el verdadero cambio."
+      ],
+      "choices": [
+        {
+          "text": "Compartir lo aprendido",
+          "nextDialog": "compartir"
+        }
+      ]
+    },
+    {
+      "id": "asamblea",
+      "character": "Narrador",
+      "lines": [
+        "Convocaste a una asamblea. El pueblo comienza a unirse."
+      ],
+      "choices": [
+        {
+          "text": "Continuar la lucha pacífica",
+          "nextDialog": "finalEsperanzador"
+        }
+      ]
+    },
+    {
+      "id": "finalViolento",
+      "character": "Narrador",
+      "lines": [
+        "La escena final es ver a los políticos brindando juntos, mientras el pueblo sufre."
+      ]
+    },
+    {
+      "id": "finalEsperanzador",
+      "character": "Narrador",
+      "lines": [
+        "El pueblo se une en una acción colectiva. Hay esperanza para un futuro mejor."
+      ]
+    },
+    {
+      "id": "reflexion",
+      "character": "Narrador",
+      "lines": [
+        "Reflexionaste sobre tus acciones, pero el daño ya estaba hecho."
+      ]
+    },
+    {
+      "id": "compartir",
+      "character": "Narrador",
+      "lines": [
+        "Compartiste tus conocimientos y sembraste la semilla del cambio."
+      ]
+    }
+  ]
+}
