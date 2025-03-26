@@ -26,5 +26,3 @@ El juego se inspira en la vestimenta campesina de los años 50-60 en Boyacá, co
 ## Instalación
 Para jugar "La Sangre del Silencio", simplemente abre el archivo `index.html` en un navegador web compatible.
 
-## Créditos
-Desarrollado por [Tu Nombre]. Agradecimientos a todos los que contribuyeron a la creación de este proyecto.
